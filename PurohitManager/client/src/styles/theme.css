@@ -1,0 +1,507 @@
+:root {
+  /* Auspicious Vedic Palette */
+  --primary: #b93815;               /* Agni / Deep Saffron-Vermilion */
+  --primary-hover: #9a2c0d;
+  --primary-light: #fff4ed;
+  --primary-border: #fed7aa;
+  --secondary: #d97706;             /* Suvarna Gold / Haridra */
+  --secondary-light: #fef3c7;
+  --secondary-border: #fde68a;
+  --accent: #b45309;                /* Chandan Amber */
+  --kumkum: #991b1b;                /* Raktachandana / Deep Sacred Red */
+  --kumkum-light: #fee2e2;
+  --tulasi: #15803d;                /* Sacred Bilva / Tulasi Green */
+  --tulasi-light: #f0fdf4;
+  --tulasi-border: #bbf7d0;
+
+  /* Surfaces & Backgrounds */
+  --bg-main: #faf6ef;               /* Chandan / Temple Sandstone Silk */
+  --card-bg: #ffffff;
+  --card-bg-warm: #fffdf9;
+  --border: #eedec8;               /* Warm Sandalwood Border */
+  --border-light: #f5ebe0;
+  --border-focus: #d97706;
+
+  /* Typography */
+  --text-main: #261b11;            /* Warm Rosewood Teak */
+  --text-muted: #786654;           /* Warm Terracotta Slate */
+  --text-light: #a89a8b;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Kannada", "Noto Sans Devanagari", sans-serif;
+
+  /* Status Colors */
+  --danger: #b91c1c;
+  --danger-light: #fee2e2;
+  --success: #15803d;
+  --success-light: #f0fdf4;
+
+  /* Shadows with Warm Ambient Glow */
+  --shadow-sm: 0 1px 3px rgba(180, 83, 9, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 10px -1px rgba(180, 83, 9, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(180, 83, 9, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.05);
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body with Subtle Sacred Temple Mandala Texture */
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(245, 158, 11, 0.07) 0px, transparent 55%),
+    radial-gradient(at 85% 85%, rgba(185, 56, 21, 0.06) 0px, transparent 55%),
+    radial-gradient(at 50% 30%, rgba(217, 119, 6, 0.04) 0px, transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b45309' fill-opacity='0.032' fill-rule='evenodd'%3E%3Cpath d='M40 0l40 40-40 40L0 40 40 0zm0 10l30 30-30 30-30-30 30-30zm0 10l20 20-20 20-20-20 20-20zm0 10l10 10-10 10-10-10 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar - Deep Sacred Temple Rosewood Aesthetic */
+.sidebar {
+  width: 230px;
+  background: linear-gradient(180deg, #1f1610 0%, #281c14 45%, #19110b 100%);
+  color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-right: 1px solid #3d2b1f;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
+  transition: width 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+}
+
+.sidebar.collapsed {
+  width: 0;
+  overflow: hidden;
+  border-right: none;
+}
+
+.sidebar-header {
+  padding: 18px 16px;
+  border-bottom: 1px solid #3d2b1f;
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-header h1 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fef3c7;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-header p {
+  font-size: 0.75rem;
+  color: #d4a373;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #e6ccb2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #fff8ee;
+  transform: translateX(2px);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, #b93815 0%, #8c2409 100%);
+  color: #ffffff;
+  border-left: 3px solid #fbbf24;
+  box-shadow: 0 3px 10px rgba(185, 56, 21, 0.35);
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  padding: 14px 16px;
+  border-top: 1px solid #3d2b1f;
+  font-size: 0.75rem;
+  color: #a89582;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Main Content Area */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  width: 100%;
+}
+
+/* Header - Serene Temple Silk Surface */
+.top-header {
+  height: 64px;
+  background-color: rgba(255, 252, 247, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  flex-shrink: 0;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(180, 83, 9, 0.04);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tithi-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
+  color: #9a3412;
+  border: 1px solid var(--primary-border);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-selector {
+  display: flex;
+  align-items: center;
+  background-color: #f5ebe0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.12s ease;
+}
+
+.lang-btn.active {
+  background-color: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 1px 3px rgba(180, 83, 9, 0.15);
+}
+
+/* Page content */
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 18px 22px;
+  min-width: 0;
+  width: 100%;
+}
+
+/* Generic Cards and Grid */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  border-color: #e2ceb4;
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Buttons - Sacred Fire & Gold Styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #c2410c 0%, #a2330a 100%);
+  border: 1px solid #8c2409;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(185, 56, 21, 0.25);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #d94e17 0%, #b93815 100%);
+  box-shadow: 0 4px 10px rgba(185, 56, 21, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #fffdf9;
+  border-color: #e5d3bc;
+  color: #78350f;
+}
+
+.btn-secondary:hover {
+  background-color: #fef3c7;
+  border-color: var(--secondary-border);
+  color: #92400e;
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  border: 1px solid #991b1b;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #991b1b;
+}
+
+.btn-sm {
+  padding: 5px 12px;
+  font-size: 0.78rem;
+}
+
+/* Form inputs */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e5d4bf;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background-color: #fffdfa;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+  background-color: #ffffff;
+}
+
+/* Tables - Auspicious Temple Parchment Styling */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  background-color: #faf2e6;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #78350f;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
+
+td {
+  padding: 12px 14px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #f2e5d5;
+}
+
+tr:hover td {
+  background-color: #fdfaf4;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-success {
+  background-color: var(--tulasi-light);
+  color: var(--tulasi);
+  border: 1px solid var(--tulasi-border);
+}
+
+.badge-warning {
+  background-color: var(--secondary-light);
+  color: var(--accent);
+  border: 1px solid var(--secondary-border);
+}
+
+.badge-danger {
+  background-color: var(--danger-light);
+  color: var(--danger);
+  border: 1px solid #fca5a5;
+}
+
+.badge-neutral {
+  background-color: #f1f5f9;
+  color: var(--text-muted);
+  border: 1px solid #e2e8f0;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(30, 20, 10, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 16px;
+}
+
+.modal-content {
+  background-color: #fffdfa;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  padding: 24px;
+}
+
+/* Custom Sandalwood Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5ebe0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}

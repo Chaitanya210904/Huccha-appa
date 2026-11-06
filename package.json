@@ -1,0 +1,15 @@
+{
+  "name": "hucccha-app",
+  "version": "1.0.0",
+  "description": "Root workspace proxy for PurohitManager",
+  "private": true,
+  "scripts": {
+    "start": "npm start --prefix PurohitManager",
+    "dev": "npm run dev --prefix PurohitManager",
+    "test": "npm test --prefix PurohitManager",
+    "build": "npm run build --prefix PurohitManager",
+    "seed": "npm run seed --prefix PurohitManager",
+    "verify": "npm run verify --prefix PurohitManager"
+  }
+}
+

@@ -1,0 +1,15 @@
+[
+  { "index": 1, "sanskrit": "Chaitra", "hindi": "चैत्र", "kannada": "ಚೈತ್ರ", "solarRashi": "Mesha", "ritu": "Vasanta" },
+  { "index": 2, "sanskrit": "Vaishakha", "hindi": "वैशाख", "kannada": "ವೈಶಾಖ", "solarRashi": "Vrishabha", "ritu": "Vasanta" },
+  { "index": 3, "sanskrit": "Jyeshtha", "hindi": "ज्येष्ठ", "kannada": "ಜ್ಯೇಷ್ಠ", "solarRashi": "Mithuna", "ritu": "Grishma" },
+  { "index": 4, "sanskrit": "Ashadha", "hindi": "आषाढ़", "kannada": "ಆಷಾಢ", "solarRashi": "Karka", "ritu": "Grishma" },
+  { "index": 5, "sanskrit": "Shravana", "hindi": "श्रावण", "kannada": "ಶ್ರಾವಣ", "solarRashi": "Simha", "ritu": "Varsha" },
+  { "index": 6, "sanskrit": "Bhadrapada", "hindi": "भाद्रपद", "kannada": "ಭಾದ್ರಪದ", "solarRashi": "Kanya", "ritu": "Varsha" },
+  { "index": 7, "sanskrit": "Ashvina", "hindi": "आश्विन", "kannada": "ಆಶ್ವಯುಜ", "solarRashi": "Tula", "ritu": "Sharad" },
+  { "index": 8, "sanskrit": "Kartika", "hindi": "कार्तिक", "kannada": "ಕಾರ್ತಿಕ", "solarRashi": "Vrishchika", "ritu": "Sharad" },
+  { "index": 9, "sanskrit": "Margashirsha", "hindi": "मार्गशीर्ष", "kannada": "ಮಾರ್ಗಶಿರ", "solarRashi": "Dhanu", "ritu": "Hemanta" },
+  { "index": 10, "sanskrit": "Pausha", "hindi": "पौष", "kannada": "ಪುಷ್ಯ", "solarRashi": "Makara", "ritu": "Hemanta" },
+  { "index": 11, "sanskrit": "Magha", "hindi": "माघ", "kannada": "ಮಾಘ", "solarRashi": "Kumbha", "ritu": "Shishira" },
+  { "index": 12, "sanskrit": "Phalguna", "hindi": "फाल्गुन", "kannada": "ಫಾಲ್ಗುಣ", "solarRashi": "Meena", "ritu": "Shishira" }
+]
+

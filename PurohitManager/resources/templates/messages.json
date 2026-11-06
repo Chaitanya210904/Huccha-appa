@@ -1,0 +1,23 @@
+{
+  "shraddhaReminder": {
+    "en": "Namaskara {clientName}. This is a reminder from {purohitName} regarding the annual Pratyabdika Shraddha of {deceasedName} ({relation}) which falls on {date} ({tithi}, {masa} Masa). The auspicious Aparahna window begins at {aparahnaStart}. Please confirm your availability and arrangements. Pranam.",
+    "kn": "ನಮಸ್ಕಾರ {clientName} ಅವರಿಗೆ. {purohitName} ಅವರ ನೆನಪೋಲೆ: ಶ್ರೀ {deceasedName} ಅವರ ({relation}) ಪ್ರತ್ಯಾಬ್ದಿಕ ಶ್ರಾದ್ಧ ದಿನಾಂಕ {date} ರಂದು ({masa} ಮಾಸ, {tithi} ತಿಥಿ) ಬಂದಿರುತ್ತದೆ. ಶ್ರಾದ್ಧದ ಅಪರಾಹ್ನ ಮುಹೂರ್ತ {aparahnaStart} ಕ್ಕೆ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ. ದಯವಿಟ್ಟು ಕಾರ್ಯಕ್ರಮವನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ಧನ್ಯವಾದಗಳು.",
+    "hi": "सादर प्रणाम {clientName} जी। {purohitName} की ओर से स्मरण पत्र: पूज्य {deceasedName} ({relation}) का वार्षिक श्राद्ध {date} ({masa} मास, {tithi}) को है। अपराह्न काल {aparahnaStart} से प्रारंभ होगा। कृपया समय और व्यवस्था सुनिश्चित करें। धन्यवाद।"
+  },
+  "bookingConfirmation": {
+    "en": "Namaskara {clientName}. Your booking for {serviceName} on {date} at {time} at {venue} is confirmed with {purohitName}. Samagri list has been attached/shared. For any queries, call {phone}. Hari Om.",
+    "kn": "ನಮಸ್ಕಾರ {clientName} ಅವರಿಗೆ. {date} ರಂದು ಸಮಯ {time} ಕ್ಕೆ {venue} ನಲ್ಲಿ {serviceName} ಕಾರ್ಯಕ್ರಮ ನಿಗದಿಯಾಗಿದೆ ({purohitName}). ಪೂಜಾ ಸಾಮಗ್ರಿಗಳ ಪಟ್ಟಿ ಕಳುಹಿಸಲಾಗಿದೆ. ಮಾಹಿತಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ: {phone}. ಹರಿ ಓಂ.",
+    "hi": "सादर प्रणाम {clientName} जी। {date} को {time} बजे {venue} में {serviceName} का कार्यक्रम {purohitName} द्वारा निश्चित किया गया है। पूजन सामग्री सूची संलग्न है। संपर्क: {phone}। हरि ॐ।"
+  },
+  "bookingReminder": {
+    "en": "Namaskara {clientName}. Gentle reminder: Tomorrow {date} at {time} is your {serviceName}. Please keep the samagri and venue ready. Purohit: {purohitName} ({phone}).",
+    "kn": "ನಮಸ್ಕಾರ {clientName}. ನೆನಪೋಲೆ: ನಾಳೆ {date} ರಂದು ಸಮಯ {time} ಕ್ಕೆ {serviceName} ಪೂಜಾ ಕಾರ್ಯಕ್ರಮವಿರುತ್ತದೆ. ಪೂಜಾ ಸಾಮಗ್ರಿ ಹಾಗೂ ಸ್ಥಳ ಸಿದ್ಧವಾಗಿರಲಿ. ಪುರೋಹಿತರು: {purohitName} ({phone}).",
+    "hi": "सादर प्रणाम {clientName} जी। स्मरण पत्र: कल {date} को समय {time} बजे आपका {serviceName} कार्यक्रम है। कृपया सामग्री व तैयारी पूर्ण रखें। पुरोहित: {purohitName} ({phone})।"
+  },
+  "paymentReceipt": {
+    "en": "Namaskara {clientName}. Received dakshina of Rs. {amount} for {serviceName} on {date} with thanks. Receipt #{receiptNumber}. May the Lord bless your family with peace and prosperity. - {purohitName}",
+    "kn": "ನಮಸ್ಕಾರ {clientName} ಅವರಿಗೆ. {serviceName} ಕಾರ್ಯಕ್ರಮದ ದಕ್ಷಿಣೆ ರೂ. {amount} ಸ್ವೀಕರಿಸಲಾಗಿದೆ ({date}). ರಸೀದಿ #{receiptNumber}. ಭಗವಂತನು ನಿಮ್ಮ ಕುಟುಂಬಕ್ಕೆ ಆಯುರಾರೋಗ್ಯ, ಸುಖ-ಶಾಂತಿ ನೀಡಲಿ. - {purohitName}",
+    "hi": "सादर प्रणाम {clientName} जी। {serviceName} हेतु दक्षिणा राशि रु. {amount} सधन्यवाद प्राप्त हुई ({date})। रसीद #{receiptNumber}। प्रभु आपके परिवार पर कृपा बनाए रखें। - {purohitName}"
+  }
+}
+

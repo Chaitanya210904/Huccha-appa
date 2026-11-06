@@ -1,0 +1,34 @@
+========================================================================
+  🪔 PUROHIT MANAGER (पुरोहित व्यवस्थापक - ಪುರೋಹಿತ ವ್ಯವಸ್ಥಾಪಕ)
+  Offline-First Management Software for Vedic Priests
+========================================================================
+
+HOW TO RUN:
+-----------
+1. On Windows:
+   Double-click "Start.bat"
+
+2. On Mac:
+   Double-click "start.command"
+
+3. On Linux:
+   Run "./start.sh" in a terminal
+
+The application runs entirely on your local machine at:
+http://127.0.0.1:3456
+
+INTERNET ACCESS:
+----------------
+No internet connection is ever required. All astronomical calculations,
+Panchang timings, and Shraddha evaluations operate 100% offline.
+
+DATA SAFETY:
+------------
+All client records, ancestors, bookings, and receipts are stored safely
+inside the "data/" directory. Rolling automated backups are kept inside
+the "backups/" folder.
+
+You can download a full backup ZIP at any time from the "Backup & Restore"
+page to keep on a USB pen drive.
+========================================================================
+

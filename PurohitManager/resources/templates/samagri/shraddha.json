@@ -1,0 +1,22 @@
+{
+  "serviceId": "shraddha",
+  "name": "Pratyabdika Shraddha / Pitru Karma Samagri",
+  "items": [
+    { "item": "Black Sesame seeds (Kari Ellu / Krishna Tila)", "qty": "200 g", "kannada": "ಕರಿ ಎಳ್ಳು", "essential": true },
+    { "item": "Darbha grass (Kusha grass with pavitra)", "qty": "1 bunch", "kannada": "ದರ್ಭೆ (ಪವಿತ್ರ ಸಮೇತ)", "essential": true },
+    { "item": "Raw Rice (Akki - for Pinda and Punya)", "qty": "2 kg", "kannada": "ಅಕ್ಕಿ", "essential": true },
+    { "item": "Barley (Yava / Javegodhi)", "qty": "100 g", "kannada": "ಜವೆಗೋಧಿ / ಯಾವ", "essential": true },
+    { "item": "Cow Ghee (Hasuvina Tuppa)", "qty": "250 g", "kannada": "ಹಸುವಿನ ತುಪ್ಪ", "essential": true },
+    { "item": "Pure Honey (Jenutuppa)", "qty": "50 g", "kannada": "ಶುದ್ಧ ಜೇನುತುಪ್ಪ", "essential": true },
+    { "item": "Cow Milk (Hasuvina Halu)", "qty": "500 ml", "kannada": "ಹಸುವಿನ ಹಾಲು", "essential": true },
+    { "item": "Cow Curd (Hasuvina Mosaru)", "qty": "250 ml", "kannada": "ಹಸುವಿನ ಮೊಸರು", "essential": true },
+    { "item": "Plantain leaves (Bale ele - uncut)", "qty": "5 nos", "kannada": "ತುದಿ ಬಾಳೆ ಎಲೆಗಳು", "essential": true },
+    { "item": "Betel leaves & Betel nuts", "qty": "20 nos", "kannada": "ವೀಳ್ಯದೆಲೆ ಮತ್ತು ಅಡಿಕೆ", "essential": true },
+    { "item": "White sacred thread (Yajnopavita / Janivara)", "qty": "4 pairs", "kannada": "ಜನಿವಾರ (ಜೋಡಿ)", "essential": true },
+    { "item": "Dhothi & Angavastra (Vastra dāna)", "qty": "1 or 2 sets", "kannada": "ಧೋತಿ ಮತ್ತು ಶಲ್ಯ", "essential": true },
+    { "item": "White flowers (no smelling, no red)", "qty": "1 packet", "kannada": "ಬಿಳಿ ಹೂವುಗಳು", "essential": true },
+    { "item": "Tila-patra (Brass/Bronze/Silver cups)", "qty": "3 nos", "kannada": "ತಾಮ್ರ/ಹಿತ್ತಾಳೆ ಪಾತ್ರೆಗಳು", "essential": true },
+    { "item": "Shraddha Bhojana cooked strictly as per Shastra (no onion/garlic/hing/masalas)", "qty": "For Bhoktas", "kannada": "ಶಾಸ್ತ್ರೋಕ್ತ ಭೋಜನ", "essential": true }
+  ]
+}
+

@@ -1,0 +1,43 @@
+{
+  "source": "Government of India Rashtriya Panchang & Standard Drik Almanac",
+  "coordinates": {
+    "Bengaluru": { "lat": 12.9716, "lon": 77.5946, "tz": "+05:30" },
+    "Varanasi": { "lat": 25.3176, "lon": 82.9739, "tz": "+05:30" }
+  },
+  "benchmarks": [
+    {
+      "event": "Chaitra Shukla Pratipada (Ugadi 2026)",
+      "date": "2026-03-20",
+      "city": "Bengaluru",
+      "expectedSamvatsara": "Parabhava",
+      "expectedShaka": 1948,
+      "expectedMasa": "Chaitra",
+      "expectedPaksha": "Shukla",
+      "expectedTithi": "Prathama"
+    },
+    {
+      "event": "Mesha Sankranti 2026 (Solar New Year)",
+      "date": "2026-04-14",
+      "city": "Bengaluru",
+      "expectedSunRashi": "Mesha",
+      "expectedAyana": "Uttarayana"
+    },
+    {
+      "event": "Guru Purnima 2026",
+      "date": "2026-07-29",
+      "city": "Bengaluru",
+      "expectedMasa": "Ashadha",
+      "expectedTithi": "Purnima",
+      "expectedPaksha": "Shukla"
+    },
+    {
+      "event": "Sarva Pitru Amavasya 2026",
+      "date": "2026-10-10",
+      "city": "Bengaluru",
+      "expectedMasa": "Bhadrapada",
+      "expectedTithi": "Amavasya",
+      "expectedPaksha": "Krishna"
+    }
+  ]
+}
+

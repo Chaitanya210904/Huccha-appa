@@ -1,0 +1,19 @@
+{
+  "name": "@purohit-manager/server",
+  "version": "1.0.0",
+  "description": "Local-first Express server for PurohitManager with atomic JSON storage",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "@purohit-manager/shared": "file:../shared",
+    "express": "^4.21.1",
+    "cors": "^2.8.5",
+    "zod": "^3.23.8",
+    "archiver": "^7.0.1"
+  }
+}
+

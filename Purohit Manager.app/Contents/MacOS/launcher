@@ -1,0 +1,19 @@
+#!/bin/bash
+DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+cd "$DIR"
+
+if command -v node >/dev/null 2>&1; then
+  NODE_BIN="node"
+elif [ -f "/usr/local/bin/node" ]; then
+  NODE_BIN="/usr/local/bin/node"
+elif [ -f "/opt/homebrew/bin/node" ]; then
+  NODE_BIN="/opt/homebrew/bin/node"
+else
+  osascript -e 'display dialog "Node.js is not installed on this Mac.\n\nPlease install Node.js from https://nodejs.org to use Purohit Manager." buttons {"OK"} default button "OK" with icon caution'
+  open "https://nodejs.org/en/download"
+  exit 1
+fi
+
+"$NODE_BIN" "$DIR/PurohitManager/server/src/index.js" &
+sleep 1.5
+open "http://127.0.0.1:3456"

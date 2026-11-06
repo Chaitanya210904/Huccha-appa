@@ -1,0 +1,33 @@
+# Node & Dependencies
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+client/dist/
+dist/
+build/
+
+# Application runtime data & backups
+data/
+backups/
+logs/
+server/data/
+server/backups/
+server/logs/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+

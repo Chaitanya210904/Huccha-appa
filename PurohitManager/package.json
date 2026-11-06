@@ -1,0 +1,36 @@
+{
+  "name": "purohit-manager",
+  "version": "1.0.0",
+  "description": "Comprehensive offline-first management software for Vedic Purohits & Jyotishis",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev": "npm --prefix client run dev",
+    "server": "node server/src/index.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "test": "node --test tests/**/*.test.js",
+    "verify": "node scripts/verify-offline.js",
+    "seed": "node scripts/seed-demo.js",
+    "release": "node scripts/build-release.js"
+  },
+  "keywords": [
+    "purohit",
+    "vedic",
+    "panchang",
+    "shraddha",
+    "sankalpa",
+    "hindu-calendar",
+    "muhurta",
+    "offline-first"
+  ],
+  "author": "PurohitManager Team",
+  "license": "ISC"
+}
+

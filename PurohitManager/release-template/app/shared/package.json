@@ -1,0 +1,22 @@
+{
+  "name": "@purohit-manager/shared",
+  "version": "1.0.0",
+  "description": "Pure calculation logic for PurohitManager: Panchang, Shraddha, Sankalpa, Festivals, and Validation",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./panchang": "./src/panchang/index.js",
+    "./shraddha": "./src/shraddha/index.js",
+    "./sankalpa": "./src/sankalpa/generator.js",
+    "./festivals": "./src/festivals/engine.js",
+    "./validation": "./src/validation/index.js",
+    "./utils/dates": "./src/utils/dates.js",
+    "./utils/ids": "./src/utils/ids.js"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "zod": "^3.23.8"
+  }
+}
+

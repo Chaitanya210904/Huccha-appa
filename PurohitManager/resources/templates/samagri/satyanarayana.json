@@ -1,0 +1,25 @@
+{
+  "serviceId": "satyanarayana",
+  "name": "Sri Satyanarayana Vrata Puja",
+  "items": [
+    { "item": "Turmeric powder (Arishina / Haldi)", "qty": "100 g", "kannada": "ಅರಿಶಿನ ಪುಡಿ", "essential": true },
+    { "item": "Kumkuma (Vermilion)", "qty": "100 g", "kannada": "ಕುಂಕುಮ", "essential": true },
+    { "item": "Sandalwood paste / Chandana", "qty": "1 box", "kannada": "ಗಂಧದ ಪುಡಿ / ಚಂದನ", "essential": true },
+    { "item": "Betel leaves (Vilyada ele)", "qty": "50 leaves", "kannada": "ವೀಳ್ಯದೆಲೆ", "essential": true },
+    { "item": "Betel nuts (Adike / Supari)", "qty": "25 pieces", "kannada": "ಅಡಿಕೆ", "essential": true },
+    { "item": "Coconuts (Tenginakayi)", "qty": "5 nos", "kannada": "ತೆಂಗಿನಕಾಯಿ", "essential": true },
+    { "item": "Raw Rice (Akki)", "qty": "2 kg", "kannada": "ಅಕ್ಕಿ", "essential": true },
+    { "item": "Flowers (Huvu) - Jasmine / Roses / Sevanthige", "qty": "2 bunches + 2 garlands", "kannada": "ಹೂವು ಮತ್ತು ಹಾರ", "essential": true },
+    { "item": "Tulasi leaves", "qty": "1 bowl", "kannada": "ತುಳಸಿ ದಳ", "essential": true },
+    { "item": "Panchamrita items (Milk, Curd, Ghee, Honey, Sugar)", "qty": "1 small cup each", "kannada": "ಹಾಲು, ಮೊಸರು, ತುಪ್ಪ, ಜೇನುತುಪ್ಪ, ಸಕ್ಕರೆ", "essential": true },
+    { "item": "Fruits (5 varieties including bananas)", "qty": "1 basket", "kannada": "ಪಂಚ ಫಲಗಳು (ಬಾಳೆಹಣ್ಣು ಇತ್ಯಾದಿ)", "essential": true },
+    { "item": "Sapaada Prasada / Sheera (Rava, Sugar, Ghee, Banana)", "qty": "For prasada", "kannada": "ಸಪಾದ ನೈವೇದ್ಯ (ರವೆ ಶಿರಾ)", "essential": true },
+    { "item": "Dry fruits (Cashews, Almonds, Raisins, Cardamom)", "qty": "50 g each", "kannada": "ದ್ರಾಕ್ಷಿ, ಗೋಡಂಬಿ, ಏಲಕ್ಕಿ", "essential": false },
+    { "item": "Camphor (Karpura) & Incense (Agarbatti)", "qty": "1 packet each", "kannada": "ಕರ್ಪೂರ ಮತ್ತು ಊದಿನಕಡ್ಡಿ", "essential": true },
+    { "item": "Deepa (Oil lamps) + Cotton wicks + Sesame oil/Ghee", "qty": "2 pairs", "kannada": "ದೀಪ, ಬತ್ತಿ, ಎಣ್ಣೆ / ತುಪ್ಪ", "essential": true },
+    { "item": "Blouse pieces / Vastra", "qty": "2 nos (red/yellow)", "kannada": "ರವಿಕೆ ಬಟ್ಟೆ / ವಸ್ತ್ರ", "essential": false },
+    { "item": "Kalasha chembu (Copper / Silver / Brass pot)", "qty": "1 no", "kannada": "ಕಲಶ ಚೊಂಬು", "essential": true },
+    { "item": "Coins for Dakshina", "qty": "21 coins", "kannada": "ದಕ್ಷಿಣೆಯ ನಾಣ್ಯಗಳು", "essential": true }
+  ]
+}
+

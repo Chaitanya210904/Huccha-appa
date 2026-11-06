@@ -1,0 +1,19 @@
+{
+  "serviceId": "ganapati_homa",
+  "name": "Maha Ganapati Homa Samagri",
+  "items": [
+    { "item": "Dry Coconut Halves (Kobbari / Copra)", "qty": "1 kg (cut into small slices)", "kannada": "ಕೊಬ್ಬರಿ ಚೂರುಗಳು", "essential": true },
+    { "item": "Pure Cow Ghee (Homa Tuppa)", "qty": "1 kg", "kannada": "ಹೋಮದ ಹಸುವಿನ ತುಪ್ಪ", "essential": true },
+    { "item": "Sugarcane pieces (Kabbu)", "qty": "1 bundle", "kannada": "ಕಬ್ಬಿನ ತುಂಡುಗಳು", "essential": true },
+    { "item": "Modaka / Ladu (Nivedana)", "qty": "21 nos", "kannada": "ಮೋದಕ / ಲಾಡು (೨೧)", "essential": true },
+    { "item": "Havan Samagri herbs mixture", "qty": "250 g", "kannada": "ಹವನ ಸಾಮಗ್ರಿ", "essential": true },
+    { "item": "Samidha sticks (Ashvattha / Palasha / Arka)", "qty": "2 bundles", "kannada": "ಸಮಿತ್ತು", "essential": true },
+    { "item": "Puffed rice (Aralu)", "qty": "250 g", "kannada": "ಅರಳು", "essential": true },
+    { "item": "Jaggery (Bella)", "qty": "250 g", "kannada": "ಬೆಲ್ಲ", "essential": true },
+    { "item": "White sesame (Bili Ellu)", "qty": "100 g", "kannada": "ಬಿಳಿ ಎಳ್ಳು", "essential": true },
+    { "item": "Durva grass (Garike)", "qty": "3 bundles", "kannada": "ಗರಿಕೆ ಹುಲ್ಲು", "essential": true },
+    { "item": "Red flowers (Hibiscus / Dasavala)", "qty": "21 flowers", "kannada": "ಕೆಂಪು ದಾಸವಾಳ ಹೂವು", "essential": true },
+    { "item": "Homa Kunda (if not built on site) + sand/bricks", "qty": "1 set", "kannada": "ಹೋಮ ಕುಂಡ / ಮರಳು ಇಟ್ಟಿಗೆ", "essential": true }
+  ]
+}
+

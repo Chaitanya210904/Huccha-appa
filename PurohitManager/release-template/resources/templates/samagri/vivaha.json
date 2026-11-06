@@ -1,0 +1,17 @@
+{
+  "serviceId": "vivaha",
+  "name": "Vivaha Samskara (Wedding Ceremony) Samagri",
+  "items": [
+    { "item": "Mangalasutra (Taali / Sacred thread with gold)", "qty": "1 no", "kannada": "ಮಾಂಗಲ್ಯ ಸೂತ್ರ", "essential": true },
+    { "item": "Garlands for Varamale", "qty": "2 pairs (fresh roses/jasmine)", "kannada": "ವರಮಾಲೆ (೨ ಜೊತೆ)", "essential": true },
+    { "item": "Kanyadana plate & Kalasha", "qty": "1 set", "kannada": "ಕನ್ಯಾದಾನದ ತಟ್ಟೆ ಮತ್ತು ಕಲಶ", "essential": true },
+    { "item": "Pure Cow Ghee for Laja Homa & Saptapadi", "qty": "2 kg", "kannada": "ಹೋಮದ ಹಸುವಿನ ತುಪ್ಪ", "essential": true },
+    { "item": "Laja (Puffed rice / Pori / Aralu)", "qty": "1 kg", "kannada": "ಲಾಜ / ಅರಳು", "essential": true },
+    { "item": "Saptapadi Betel leaves, nuts, & coins", "qty": "7 sets", "kannada": "ಸಪ್ತಪದಿಗೆ ೭ ಎಲೆ ಅಡಿಕೆ ನಾಣ್ಯಗಳು", "essential": true },
+    { "item": "Silky White Vastra (Kankana vastra / Antarpata)", "qty": "2 meters", "kannada": "ಅಂತರಪಟ ಮತ್ತು ಕಂಕಣ", "essential": true },
+    { "item": "Grinding stone (Ammi kallu / Shila) for Ashmarohana", "qty": "1 no", "kannada": "ಶಾಸ್ತ್ರದ ರುಬ್ಬುವ ಕಲ್ಲು (ಅಶ್ಮಾರೋಹಣ)", "essential": true },
+    { "item": "Raw Rice for Akshata (mixed with turmeric/kumkum)", "qty": "5 kg", "kannada": "ಅಕ್ಷತೆ (ಅರಿಶಿನ ಬೆರೆಸಿದ ಅಕ್ಕಿ)", "essential": true },
+    { "item": "Dhoti, Angavastra, and Silk Sarees for Samskara", "qty": "As per custom", "kannada": "ಸಂಸ್ಕಾರದ ವಸ್ತ್ರಗಳು", "essential": true }
+  ]
+}
+

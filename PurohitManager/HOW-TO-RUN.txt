@@ -1,0 +1,60 @@
+========================================================================
+   🪔 PUROHIT MANAGER (पुरोहित व्यवस्थापक - ಪುರೋಹಿತ ವ್ಯವಸ್ಥಾಪಕ)
+   Quick Guide: How to Run the App (Troubleshooting Included)
+========================================================================
+
+Welcome! Follow these simple steps to run the application offline.
+
+------------------------------------------------------------------------
+STEP 1: UNZIP (EXTRACT) THE FOLDER FIRST! ⚠️
+------------------------------------------------------------------------
+Do NOT double-click the files from inside the ZIP file!
+- Windows: Right-click the downloaded ZIP -> click "Extract All..." -> "Extract".
+- Mac: Double-click the ZIP to extract it.
+- Now open the EXTRACTED regular folder.
+
+
+------------------------------------------------------------------------
+STEP 2: CHECK IF NODE.JS IS INSTALLED (1-TIME REQUIREMENT)
+------------------------------------------------------------------------
+This offline app requires a free tool called "Node.js" to run on your PC.
+If your computer doesn't have it yet:
+1. Go to: https://nodejs.org
+2. Click the green button: "LTS (Recommended)"
+3. Open the downloaded installer and click "Next", "Next", "Finish".
+(This only needs to be done once in your life!)
+
+
+------------------------------------------------------------------------
+STEP 3: START THE APP!
+------------------------------------------------------------------------
+
+➤ ON WINDOWS:
+  Double-click:  "Start-Windows.bat"
+
+  * If Windows shows a blue pop-up ("Windows protected your PC"):
+    1. Click "More info" (small blue text)
+    2. Click the "Run anyway" button
+
+➤ ON MAC:
+  Option A: Double-click "Purohit Manager.app"
+  Option B: Right-click "Start-Mac.command" -> choose "Open" -> click "Open".
+  Option C: In Terminal, simply run:  sh Start-Mac.command
+
+
+------------------------------------------------------------------------
+STEP 4: ENJOY THE APP
+------------------------------------------------------------------------
+- Keep the black Terminal/Command window open in the background.
+- Your default web browser will automatically open:
+  👉 http://127.0.0.1:3456
+
+- You can now use the full Purohit Manager completely offline!
+
+
+------------------------------------------------------------------------
+HOW TO CLOSE:
+------------------------------------------------------------------------
+1. Close your browser tab.
+2. Close the black Terminal / Command Prompt window.
+========================================================================
