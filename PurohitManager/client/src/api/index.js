@@ -103,6 +103,8 @@ export const api = {
   seedDemoData: () => request('/system/seed-demo', { method: 'POST' }),
   getSnapshots: () => request('/backup/snapshots'),
   createSnapshot: () => request('/backup/create', { method: 'POST' }),
-  restoreSnapshot: (id) => request(`/backup/restore/${id}`, { method: 'POST' })
+  restoreSnapshot: (id) => request(`/backup/restore/${id}`, { method: 'POST' }),
+  emailBackup: (body) => request('/backup/email', { method: 'POST', body: JSON.stringify(body) }),
+  uploadRestoreBackup: (body) => request('/backup/upload-restore', { method: 'POST', body: JSON.stringify(body) })
 };
 

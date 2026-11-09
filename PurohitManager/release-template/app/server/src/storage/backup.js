@@ -78,6 +78,72 @@ export const backupEngine = {
   },
 
   /**
+   * Creates an in-memory ZIP buffer of the data directory and any optional extra files
+   * @param {Array<{ name: string, content: string|Buffer }>} [extraFiles]
+   * @returns {Promise<Buffer>}
+   */
+  createZipBuffer(extraFiles = []) {
+    return new Promise((resolve, reject) => {
+      const archive = archiver('zip', { zlib: { level: 9 } });
+      const buffers = [];
+
+      archive.on('data', chunk => buffers.push(chunk));
+      archive.on('end', () => resolve(Buffer.concat(buffers)));
+      archive.on('error', err => reject(err));
+
+      const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+      for (const f of files) {
+        archive.file(path.resolve(DATA_DIR, f), { name: f });
+      }
+
+      if (Array.isArray(extraFiles)) {
+        for (const ef of extraFiles) {
+          if (ef && ef.name && ef.content) {
+            const buf = Buffer.isBuffer(ef.content)
+              ? ef.content
+              : Buffer.from(typeof ef.content === 'object' ? JSON.stringify(ef.content, null, 2) : ef.content, 'utf-8');
+            archive.append(buf, { name: ef.name });
+          }
+        }
+      }
+
+      archive.finalize();
+    });
+  },
+
+  /**
+   * Restores data from uploaded files array
+   * Automatically takes a safety snapshot first.
+   * @param {Array<{ name: string, content: string|Object }>} files
+   * @returns {{ restoredCount: number }}
+   */
+  restoreFromFiles(files = []) {
+    if (!Array.isArray(files) || files.length === 0) {
+      throw new Error("No files provided for restore");
+    }
+
+    // Safety snapshot first
+    this.createSnapshot();
+
+    let restoredCount = 0;
+    for (const file of files) {
+      const filename = path.basename(file.name || '');
+      if (!filename.endsWith('.json')) continue;
+
+      const dest = path.resolve(DATA_DIR, filename);
+      let content = file.content;
+      if (typeof content === 'object') {
+        content = JSON.stringify(content, null, 2);
+      }
+      fs.writeFileSync(dest, content, 'utf-8');
+      restoredCount++;
+    }
+
+    logger.info(`Restored ${restoredCount} files from user upload`);
+    return { restoredCount };
+  },
+
+  /**
    * Lists available local backups
    */
   listSnapshots() {
