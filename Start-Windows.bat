@@ -56,6 +56,13 @@ if exist "%SCRIPT_DIR%PurohitManager\server\src\index.js" (
 cd /d "%APP_DIR%"
 
 :: 3. Check if Node.js is installed on this computer
+:: Check standard installation paths and append to PATH dynamically
+if exist "C:\Program Files\nodejs\node.exe" set "PATH=C:\Program Files\nodejs;%PATH%"
+if exist "C:\Program Files (x86)\nodejs\node.exe" set "PATH=C:\Program Files (x86)\nodejs;%PATH%"
+if exist "%ProgramW6432%\nodejs\node.exe" set "PATH=%ProgramW6432%\nodejs;%PATH%"
+if exist "%LOCALAPPDATA%\Programs\node\node.exe" set "PATH=%LOCALAPPDATA%\Programs\node;%PATH%"
+if exist "%USERPROFILE%\AppData\Roaming\npm" set "PATH=%USERPROFILE%\AppData\Roaming\npm;%PATH%"
+
 where node >nul 2>&1
 if %errorlevel% neq 0 (
     echo ====================================================================
@@ -63,6 +70,27 @@ if %errorlevel% neq 0 (
     echo  (ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Node.js ಸಾಫ್ಟ್‌ವೇರ್ ಇನ್‌ಸ್ಟಾಲ್ ಆಗಿಲ್ಲ)
     echo ====================================================================
     echo.
+
+    :: Check if user already downloaded the installer in Downloads folder
+    set "FOUND_INSTALLER="
+    for %%F in ("%USERPROFILE%\Downloads\node-v*.msi") do (
+        if exist "%%F" set "FOUND_INSTALLER=%%F"
+    )
+
+    if defined FOUND_INSTALLER (
+        echo  [ಕಂಡುಬಂದಿದೆ / FOUND] Node.js Installer found in Downloads:
+        echo  !FOUND_INSTALLER!
+        echo.
+        echo  Launching the installer now...
+        echo  1. In the installer window, click "Next" -^> "I accept" -^> "Next" -^> "Finish".
+        echo  2. After installation completes, double-click "Start-Windows.bat" again!
+        echo ====================================================================
+        start "" "!FOUND_INSTALLER!"
+        echo.
+        pause
+        exit /b 0
+    )
+
     echo  Purohit Manager runs 100%% offline, but requires Node.js (free runtime).
     echo.
     echo  Opening official Node.js download page in your web browser now...
